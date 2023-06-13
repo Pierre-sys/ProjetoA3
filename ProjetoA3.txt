@@ -1,0 +1,20 @@
+create database db_agua;
+
+
+use db_agua;
+
+
+create table tb_cliente(id int primary key auto_increment, nome varchar(200), idade varchar (200), email varchar (200), senha varchar (200), tipo varchar (1));
+insert into tb_cliente (nome, idade, email, senha, tipo) values ('Caue', '18', 'cauejezus@gmail.com', 'cbjr3215', 'a');
+
+
+create table tb_consumo( id int primary key auto_increment, Tempo_no_Banho int, Quantas_Descargas int, Tempo_Lavando_louça int, Tempo_Escovando_Dentes int, Gasto_Total int);
+
+
+
+create table tb_quiz( perguntas varchar(700), respostas varchar(1320), resposta_correta varchar(700));
+insert into tb_quiz(perguntas, respostas, resposta_correta) values ('Quanto tempo, em média, uma torneira pingando desperdiça água em um dia?', '10 Litros,15 Litros,46 Litros,25 Litros', '46 Litros');
+insert into tb_quiz(perguntas, respostas, resposta_correta) values ('Qual é a principal causa do desperdício de água em residências?', 'Descarga,Banhos longos,Vazamentos de torneiras e canos,Escovar os dentes com a torneira ligada', 'Vazamentos de torneiras e canos');
+insert into tb_quiz(perguntas, respostas, resposta_correta) values ('Qual das seguintes atividades domésticas consome mais água?', 'Lavar roupa na máquina,Tomar banho,Regar o jardim,Lavar louça à mão', 'Lavar roupa na máquina');
+insert into tb_quiz(perguntas, respostas, resposta_correta) values ('Como reduzir o desperdício de água ao lavar o carro?', 'Usar mangueira de alta pressão,Lavar em superfície impermeável,Deixar torneira aberta o tempo todo,Enxaguar com baldes de água', 'Enxaguar com baldes de água');
+insert into tb_quiz(perguntas, respostas, resposta_correta) values ('Qual é uma das principais consequências do desperdício de água nas áreas urbanas?', 'Escassez de água,Aumento da poluição do ar,Restrição no abastecimento de água,Erosão do solo', 'Restrição no abastecimento de água');
